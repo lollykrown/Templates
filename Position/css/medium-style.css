@@ -1,0 +1,67 @@
+@media only screen and (min-width: 768px) {   
+    .menu {
+        clear: left;
+        padding-left: 0;
+      } 
+    .menu li {
+        display: inline-block;
+        list-style: none;
+        font-weight: 500;
+      }   
+      .menu li a {
+        margin: 1em 1em;
+      }
+      li.active a {
+        margin: 0;
+      }
+    nav button {display: none;}
+    nav ul {
+      display: block;
+      float: right;
+    }    
+    .section-container {
+      display: grid;
+      width: 94%;
+      grid-template-columns: 10fr 0.5fr 9fr;
+      grid-template-areas: "sec-img bar sec-content";
+      column-gap: 0.125em;
+    }
+    .bar {
+      width: 0.5em;
+      height: 6em;
+      margin: 0 40px 0 40px;
+      background-color: #000000;
+    }
+    .sec-img img {
+      display: block;
+    }
+    .bar {
+      display: block;
+    }
+    .end {
+      text-align: end;
+    }
+    .box-section {
+      padding-left: 6em
+    }
+    /* .box {
+      padding: 2em;
+      justify-content: center;
+      width: 24em;
+      margin: 0.5em 0 0 6em;
+    } */
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 3fr 1fr 1fr 1fr;
+      grid-template-areas: "about company legal follow";
+      column-gap: 3em;
+      row-gap: 3em;
+      padding: 3em;
+    }
+    
+    .company,
+    .legal,
+    .follow {
+      justify-self: center;
+    }
+} /* end of media query */
