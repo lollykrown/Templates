@@ -5,10 +5,9 @@
 }
 
 body {
-    color: #f4cc2c;
+    color: #0f1ad8;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
-    background-color: #27262c;
 }
 section {
     width: 100%;
@@ -17,7 +16,7 @@ section {
 .loader-style {
     width: 100%;
     height: 100vh;
-    background-color: #f4cc2c;
+    background-color: #000fff;
 }
 
 .col1 img {
@@ -41,16 +40,16 @@ a{
     color: #a4a4a4;
 }
 .active{
-    color: #f4cc2c;
+    color: #000fff;
     font-weight: 700;
-    border-top:solid .125em #f4cc2c;
+    border-top:solid .125em #000fff;
     padding-top: 1em
 }
 a:hover{
     font-size: 1.125em;
 }
 .blue {
-    color: #f4cc2c;
+    color: #000fff;
 }
 .top, .bottom {
     display: none;
@@ -84,13 +83,14 @@ a:hover{
     h3 {
         text-transform: uppercase;
         margin-left: .5em;
+
     }
     button{
         border-radius: .75em;
         padding: .75em 2.5em;
-        background-color: #f4cc2c;
-        border-color: #f4cc2c;
-        color: #27262c;
+        background-color: #000fff;
+        border-color: #000fff;
+        color: #ffffff;
         text-transform: uppercase;
     }
     .col1 {
@@ -139,6 +139,8 @@ a:hover{
         margin: 1em;
     }
 }
+
+
 
 
 /* loader css */

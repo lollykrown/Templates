@@ -5,9 +5,10 @@
 }
 
 body {
-    color: #0f1ad8;
+    color: #f4cc2c;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
+    background-color: #27262c;
 }
 section {
     width: 100%;
@@ -16,7 +17,7 @@ section {
 .loader-style {
     width: 100%;
     height: 100vh;
-    background-color: #000fff;
+    background-color: #f4cc2c;
 }
 
 .col1 img {
@@ -40,16 +41,16 @@ a{
     color: #a4a4a4;
 }
 .active{
-    color: #000fff;
+    color: #f4cc2c;
     font-weight: 700;
-    border-top:solid .125em #000fff;
+    border-top:solid .125em #f4cc2c;
     padding-top: 1em
 }
 a:hover{
     font-size: 1.125em;
 }
 .blue {
-    color: #000fff;
+    color: #f4cc2c;
 }
 .top, .bottom {
     display: none;
@@ -83,14 +84,13 @@ a:hover{
     h3 {
         text-transform: uppercase;
         margin-left: .5em;
-
     }
     button{
         border-radius: .75em;
         padding: .75em 2.5em;
-        background-color: #000fff;
-        border-color: #000fff;
-        color: #ffffff;
+        background-color: #f4cc2c;
+        border-color: #f4cc2c;
+        color: #27262c;
         text-transform: uppercase;
     }
     .col1 {
@@ -139,9 +139,6 @@ a:hover{
         margin: 1em;
     }
 }
-
-
-
 
 /* loader css */
 #logo {
