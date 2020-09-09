@@ -52,7 +52,7 @@ li a:hover{
 .blue {
     color: #f4cc2c;
 }
-.top, .bottom {
+.bottom {
     display: none;
 }
 a#btn{
@@ -67,19 +67,13 @@ a#btn{
     color: #f4cc2c !important;
 }
 @media only screen and (min-width: 567px) {
-    .top {
-        display: block;
-        position: absolute;
-        top: 0;
-        left:0;
-        width: 12.5%;
-    }
     .bottom {
         display: block;
         position: absolute;
         right: 0;
         bottom:9em;
         width: 12.5%;
+        z-index: -1;
     }
     h1{
         font-size: 12em;
@@ -112,11 +106,14 @@ a#btn{
     }
     .btn {
         grid-area: bottom;
+        position: relative;
+        top: -10px;
+        left: 0
     }
     .container {
         display: grid;
-        width:80%;
-        height: 80%;
+        width:100%;
+        height: 100%;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, auto);
         grid-template-areas:
