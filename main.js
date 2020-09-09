@@ -13,13 +13,6 @@ document.onreadystatechange = function() {
     } 
 };
 
-const button = document.getElementById("#btn");
-
-  button.addEventListener("click", function() {
-    console.log('clicked')
-    // window.location('../pages/about.html')
-  });
-
 
 // const icons = document.getElementsByTagName("i");
 

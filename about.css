@@ -96,13 +96,13 @@ a#btn{
         text-transform: uppercase;
         margin-left: .5em;
     }
-    button{
-        border-radius: .75em;
-        padding: .75em 2.5em;
-        background-color: #f4cc2c;
-        border-color: #f4cc2c;
-        color: #27262c;
+    h2{
+        font-size: 6em;
         text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 800;
+        color: #a4a4a4;
+        z-index: -1
     }
     .col1 {
         grid-area: top;
@@ -121,7 +121,7 @@ a#btn{
         grid-template-rows: repeat(2, auto);
         grid-template-areas:
             'top topp'
-            '. bottom';
+            'bottom .';
         grid-gap: 3em;
         padding: 2em;
     }
