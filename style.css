@@ -109,17 +109,10 @@ h3 {
     text-transform: uppercase;
     margin-left: .5em;
 }
-button{
-    border-radius: .75em;
-    padding: .75em 2.5em;
-    background-color: #f4cc2c;
-    border-color: #f4cc2c;
-    color: #27262c;
-    text-transform: uppercase;
-}
 
 li {
-    display: inline;
+    display: block;
+    margin-bottom: .5em;
 }
 .menu{
     float: left;
@@ -133,7 +126,7 @@ li {
     padding-bottom: .75em;
 }
 .icons li {
-    margin: 1em;
+    margin-bottom: 1em;
 }
 
 @media only screen and (min-width: 567px) {
@@ -151,37 +144,12 @@ li {
         bottom:9em;
         width: 12.5%;
     }
-    h1{
-        font-size: 12em;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 800;
-    }
-    p{
-        font-family: 'Dancing Script', cursive;
-        font-size: 3em;
-        color: #a4a4a4;
-        margin-left: .125em;
-    }
-    h3 {
-        text-transform: uppercase;
-        margin-left: .5em;
-    }
-    button{
-        border-radius: .75em;
-        padding: .75em 2.5em;
-        background-color: #f4cc2c;
-        border-color: #f4cc2c;
-        color: #27262c;
-        text-transform: uppercase;
-    }
     .col1 {
         grid-area: top;
+        display: block;
     }
     .col2 {
         grid-area: topp;
-    }
-    .btn {
-        grid-area: bottom;
     }
     .container {
         display: grid;
@@ -198,26 +166,11 @@ li {
     .col1 img {
         float: right;
     }
-    .btn,
-    .col2 {
-        justify-self: start;
-    }
     li {
         display: inline;
     }
-    .menu{
-        float: left;
-    }
-    .menu li {
-        margin-right: .75em;
-        text-transform: uppercase;
-    }
-    .icons {
-        float: right;
-        padding-bottom: .75em;
-    }
     .icons li {
-        margin: 1em;
+        margin-left: 1.5em;
     }
 }
 
