@@ -66,6 +66,76 @@ a#btn{
 .icons a:hover i {
     color: #f4cc2c !important;
 }
+
+
+.col1 {
+    display: none;
+}
+.col2 {
+    grid-area: top;
+}
+.btn {
+    grid-area: bottom;
+}
+.container {
+    display: grid;
+    width:80%;
+    height: 80%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        'top'
+        'bottom';
+    grid-gap: 3em;
+    padding: 2em;
+}
+
+.btn,
+.col2 {
+    justify-self: start;
+}
+
+h1{
+    font-size: 12em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    color: #a4a4a4;
+    margin-left: .125em;
+}
+h3 {
+    text-transform: uppercase;
+    margin-left: .5em;
+}
+button{
+    border-radius: .75em;
+    padding: .75em 2.5em;
+    background-color: #f4cc2c;
+    border-color: #f4cc2c;
+    color: #27262c;
+    text-transform: uppercase;
+}
+
+li {
+    display: inline;
+}
+.menu{
+    float: left;
+}
+.menu li {
+    margin-right: .75em;
+    text-transform: uppercase;
+}
+.icons {
+    float: right;
+    padding-bottom: .75em;
+}
+.icons li {
+    margin: 1em;
+}
+
 @media only screen and (min-width: 567px) {
     .top {
         display: block;
