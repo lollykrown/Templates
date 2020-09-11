@@ -72,7 +72,7 @@ li a:hover{
     grid-area: top;
 }
 .btn {
-    grid-area: bottom;
+display: none;
 }
 .container {
     display: grid;
@@ -82,8 +82,8 @@ li a:hover{
     grid-template-areas:
         'top'
         'bottom';
-    grid-gap: 3em;
-    padding: 2em;
+    grid-gap: 2em;
+    padding: 2em 1em;
 }
 .btn,
 .col2 {
@@ -147,6 +147,7 @@ li {
     }
     .btn {
         grid-area: bottom;
+        display: block;
         /* position: relative;
         top: -60px;
         left: 0; */
