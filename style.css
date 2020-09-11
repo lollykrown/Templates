@@ -130,6 +130,9 @@ li {
 }
 
 @media only screen and (min-width: 567px) {
+    footer {
+        padding: 1em 3em;
+    }
     .top {
         display: block;
         position: absolute;
