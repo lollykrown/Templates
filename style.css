@@ -43,11 +43,11 @@ a{
 .active{
     color: #f4cc2c;
     font-weight: 700;
-    border-top:solid .125em #f4cc2c;
     padding-top: 1em
 }
 li a:hover{
     font-size: 1.019em;
+    color: #ffffff
 }
 .blue {
     color: #f4cc2c;
@@ -88,7 +88,6 @@ a#btn{
     grid-gap: 3em;
     padding: 2em;
 }
-
 .btn,
 .col2 {
     justify-self: start;
@@ -171,6 +170,9 @@ li {
     }
     .icons li {
         margin-left: 1.5em;
+    }
+    .active{
+        border-top:solid .125em #f4cc2c;
     }
 }
 
