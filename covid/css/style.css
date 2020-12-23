@@ -1,0 +1,20 @@
+:root {
+    --primary: rgb(255,94,57);
+    --text: #090E3F;
+    --disabledBlue: #8ED0F9;
+    --mainWhite: #ffffff;
+    --inactive: #8ed0f9;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--text);
+  }
+
+/* navbar */
+.navbar-brand{
+    color: var(--primary) !important;
+    font-weight: 600;
+}
