@@ -1,9 +1,9 @@
 :root {
     --primary: rgb(255,94,57);
     --text: #090E3F;
-    --disabledBlue: #8ED0F9;
-    --mainWhite: #ffffff;
-    --inactive: #8ed0f9;
+    --white: #ffffff;
+    --background: #F1F1F1;
+    --pink: rgb(198,15,80);
 }
 
 body {
@@ -12,9 +12,33 @@ body {
     font-weight: 300;
     color: var(--text);
   }
-
+header, #top{
+    background-color: var(--background);
+}
 /* navbar */
+
 .navbar-brand{
     color: var(--primary) !important;
     font-weight: 600;
+}
+.nav-link{
+    color: var(--text) !important;
+}
+.active{
+    color: var(--primary) !important;
+    padding-left: 0 !important;
+    border-bottom: 4px solid var(--primary);
+    width: 30%;
+    border-radius: 3px;
+}
+.nav-link:hover{
+    background-color: rgb(255,94,57,0.2);
+    width:max-content;
+    transition: all 0.5s ease-in;
+    padding-left:8px !important;
+    border-radius: 3px;
+}
+#helpline{
+    background-color: var(--primary);
+    color:var(--white) !important;
 }
