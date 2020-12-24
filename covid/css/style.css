@@ -182,3 +182,10 @@ h6{
 .recovered-figures{
     color: rgb(0,186,0)
 }
+
+
+/* footer */
+footer{
+    background-color: #003E5D;
+    border-top-right-radius: 140px;
+}
