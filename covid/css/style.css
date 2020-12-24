@@ -32,9 +32,10 @@ header,
     width: 30%;
     border-radius: 3px;
 }
-.nav-link:hover,.play:hover {
+.nav-link:hover {
     background-color: rgb(255, 94, 57, 0.2);
     width: max-content;
+    padding-left: 8px !important;
     transition: all 0.5s ease-in;
     border-radius: 3px;
 }
@@ -69,18 +70,20 @@ header,
     padding-top: 10px;
 }
 
+/* second */
+.det{
+    max-width:50%;
+    margin: 30px auto;;
+}
 
 /* charts */
-.charts-con {
-    text-align: center;
-}
 .line2 {
     border-top: 4px solid var(--primary);
     width: 120px;
     margin: 20px auto;
     border-radius: 3px;
 }
-.updated {
+.updated, .det {
     color: #A1A1A1;
 }
 .confirmed {
