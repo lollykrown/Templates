@@ -1,44 +1,113 @@
 :root {
-    --primary: rgb(255,94,57);
+    --primary: rgb(255, 94, 57);
     --text: #090E3F;
     --white: #ffffff;
     --background: #F1F1F1;
-    --pink: rgb(198,15,80);
+    --pink: rgb(198, 15, 80);
 }
-
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 300;
     color: var(--text);
-  }
-header, #top{
+}
+header,
+#top {
     background-color: var(--background);
 }
-/* navbar */
 
-.navbar-brand{
+
+/* navbar */
+.navbar-brand {
     color: var(--primary) !important;
     font-weight: 600;
 }
-.nav-link{
+.nav-link {
     color: var(--text) !important;
 }
-.active{
+.active {
     color: var(--primary) !important;
     padding-left: 0 !important;
     border-bottom: 4px solid var(--primary);
     width: 30%;
     border-radius: 3px;
 }
-.nav-link:hover{
-    background-color: rgb(255,94,57,0.2);
-    width:max-content;
+.nav-link:hover,.play:hover {
+    background-color: rgb(255, 94, 57, 0.2);
+    width: max-content;
     transition: all 0.5s ease-in;
-    padding-left:8px !important;
     border-radius: 3px;
 }
-#helpline{
-    background-color: var(--primary);
-    color:var(--white) !important;
+#helpline,#helpline:hover {
+    background-image: linear-gradient(to right, var(--primary), var(--pink));
+    /* background-color: var(--primary); */
+    color: var(--white) !important;
+    border-radius: 4px;
+    padding: 8px 16px !important;
+}
+
+
+/* top */
+#top {
+    margin-bottom: 50px;
+    ;
+    border-bottom-right-radius: 140px;
+}
+.stay,.play {
+    color: var(--primary);
+}
+.stay {
+    margin-bottom: 4px;
+}
+.line {
+    border-top: 4px solid var(--primary);
+    width: 30px;
+    border-radius: 3px;
+}
+.arrow {
+    background-color: rgba(255, 94, 57, 0.2);
+    padding-top: 10px;
+}
+
+
+/* charts */
+.charts-con {
+    text-align: center;
+}
+.line2 {
+    border-top: 4px solid var(--primary);
+    width: 120px;
+    margin: 20px auto;
+    border-radius: 3px;
+}
+.updated {
+    color: #A1A1A1;
+}
+.confirmed {
+    background-color: rgba(255, 170, 57, 0.2);
+    border-bottom: 4px solid rgb(255, 170, 57);
+}
+.con-figures {
+    color: rgb(255, 170, 57);
+}
+.deaths {
+    background-color: rgba(255,61,57, 0.2);
+    border-bottom: 4px solid rgb(255,61,57);
+}
+.death-figures {
+    color: rgb(255,61,57);
+}
+.countries{
+    background-color: rgba(79,192,255,0.2);
+    border-bottom: 4px solid rgb(79,192,255);
+}
+.countries-figures{
+    color: rgb(79,192,255);
+}
+.recovered{
+    background-color: rgba(0,186,0,0.2);
+    border-bottom: 4px solid rgb(0,186,0);
+}
+.recovered-figures{
+    color: rgb(0,186,0)
 }
