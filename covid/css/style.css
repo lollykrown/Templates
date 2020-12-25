@@ -22,9 +22,12 @@ header, #stats,
 #top, #symptoms {
     background-color: var(--background);
 }
+#transmission, #stats,
+#prevention, #top, #symptoms {
+    margin-bottom:100px !important;
+}
 section{
     width:100%;
-    margin-bottom:100px !important;
 }
 
 /* navbar */
@@ -32,7 +35,7 @@ section{
     color: var(--primary) !important;
     font-weight: 600;
 }
-.nav-link {
+header .nav-link {
     color: var(--text) !important;
     font-weight: 400;
 }
@@ -272,7 +275,25 @@ footer{
     text-decoration: none;
     color: var(--white);
 }
-.links a:hover{
+.separator{
+    width:100%;
+    /* height:4px; */
+    border: 0.2px solid rgb(255,255,255,0.1);
+}
+.footer-nav .nav-link{
+    color: var(--white) !important;
+    font-weight:300;
+    font-size:14px;
+}
+.links a:hover, .footer-nav a:hover{
     font-weight:500;
     color: var(--primary);
+}
+input{
+    min-width: 380px
+}
+.input-img{
+    height:100%;
+    padding:0;
+    margin:0;
 }
