@@ -126,8 +126,15 @@ h6{
 .symptoms-grid> div{
     width:180px;
     height:200px;
-    background-color: violet;
+    background-color: var(--white);
+    border-radius: 8px;;
 }
+.symp{
+    text-align: center;
+    padding:5px 0;
+    color: var(--text)
+}
+
 
 
 /* prevention */
