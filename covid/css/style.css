@@ -83,10 +83,20 @@ header .nav-link:hover {
     color: var(--primary)
 }
 
-/* transmission */
+/* transmission */ 
 .det{
-    max-width:50%;
     margin: 30px auto;;
+}
+/* .card{
+    width: 14rem;
+} */
+@media only screen and (min-width: 768px) { 
+    .det{
+        max-width:50%;
+    }
+    /* .card{
+        width: 14rem;
+    } */
 }
 .line3 {
     border-top: 4px solid var(--primary);
@@ -105,6 +115,7 @@ h6, details>summary, details>p{
 .card-title{
     font-weight: 600;
 }
+
 .symptoms-grid {
     display: grid;
     grid-gap: 20px;
@@ -146,18 +157,7 @@ h6, details>summary, details>p{
     padding:5px 0;
     color: var(--text)
 }
-/* @media only screen and (max-width: 767px) { 
-    .symptoms-grid {
-        margin-left:5px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: 
-        "first second ."
-        "third fourth"
-        "fifth .";
-    }
- } */
+
 
 
 
@@ -178,14 +178,16 @@ details > summary::-webkit-details-marker {
   }
 details > summary {
     padding: 15px 10px;
-    width: max-content;
+    max-width: max-content;
     margin: 5px 0;
     border: 1px solid rgb(255,170,57,0.4);
     box-shadow: 1px 1px 2px #bbbbbb;
     cursor: pointer;
     border-radius: 4px;
 }
-  
+.pr{
+    font-weight: 400;
+}  
   details > p {
     color: var(--white);
     background-color: var(--yellow);
@@ -234,6 +236,7 @@ details > summary {
 }
 
 
+
 /* footer */
 footer{
     background-color: #003E5D;
@@ -242,7 +245,7 @@ footer{
 }
 .contact{
     background-color: var(--white);
-    border-bottom-right-radius: 140px;
+    border-bottom-right-radius: 120px;
     padding:70px;
     margin: 0;
     position: relative;
@@ -289,11 +292,14 @@ footer{
     font-weight:500;
     color: var(--primary);
 }
-input{
-    min-width: 380px
+input {
+    min-width: 380px;
+    /* background-image: url(img/arrow.svg);
+    background-repeat: no-repeat; */
 }
 .input-img{
-    height:100%;
+    /* max-width: 380px;
+    height:100%; */
     padding:0;
     margin:0;
 }
