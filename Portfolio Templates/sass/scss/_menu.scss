@@ -101,13 +101,16 @@
     &__link {
       display: inline-block;
       font-size: 2rem;
-      text-transform: uppercase;
+      // text-transform: uppercase;
       padding: 2rem 0;
-      font-weight: 300;
+      font-weight: 400;
       @include transition-ease;
 
       &:hover {
         color: $secondary-color;
+        background-color:rgba(255,255,255,0.7);
+        padding: .75rem 5px;
+        border-radius: 2px;
       }
     }
   }
