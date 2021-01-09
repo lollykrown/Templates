@@ -56,13 +56,6 @@ header .nav-link {
     color: var(--text) !important;
     font-weight: 400;
 }
-.active {
-    color: var(--primary) !important;
-    padding-left: 0 !important;
-    border-bottom: 4px solid var(--primary);
-    width: 30%;
-    border-radius: 3px;
-}
 header .nav-link:hover {
     background-color: rgb(255, 94, 57, 0.2);
     width: max-content;
@@ -75,7 +68,14 @@ header .nav-link:hover {
     /* background-color: var(--primary); */
     color: var(--white) !important;
     border-radius: 4px;
-    padding: 8px 16px !important;
+}
+.active {
+    color: var(--primary) !important;
+    padding-left: 0 !important;
+    background: none !important;
+    border-bottom: 4px solid var(--primary);
+    width: 30%;
+    border-radius: 3px;
 }
 .sticky {
     position: fixed;
@@ -83,14 +83,22 @@ header .nav-link:hover {
     padding: 0px 16px;
     width: 100%;
     background-color:#003E5D;
+    transition: all 1s ease-in-out;
   }
 .sticky + #top {
     padding-top: 102px;
  }
 .sticky .nav-link{
     color: var(--white) !important;
-
 }
+.sticky .nav-link:hover {
+    background-color: rgba(255,255,255, 0.5);
+    width: max-content;
+    padding-left: 8px !important;
+    transition: all 0.5s ease-in;
+    border-radius: 3px;
+}
+
 
 
 /* top */
