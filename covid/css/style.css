@@ -6,11 +6,7 @@
     --pink: rgb(198, 15, 80);
     --yellow: rgb(255,170,57);
 }
-/* * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-} */
+
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -31,6 +27,9 @@ section{
 }
 
 /* navbar */
+header{
+    z-index: 1000 !important;
+}
 .logo {
     pointer-events: none;
   }
@@ -78,6 +77,20 @@ header .nav-link:hover {
     border-radius: 4px;
     padding: 8px 16px !important;
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    padding: 0px 16px;
+    width: 100%;
+    background-color:#003E5D;
+  }
+.sticky + #top {
+    padding-top: 102px;
+ }
+.sticky .nav-link{
+    color: var(--white) !important;
+
+}
 
 
 /* top */
@@ -101,20 +114,21 @@ header .nav-link:hover {
     color: var(--primary)
 }
 
+
 /* transmission */ 
+.card:hover, .im:hover {
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out;
+}
 .det{
     margin: 30px auto;;
 }
-/* .card{
-    width: 14rem;
-} */
+
 @media only screen and (min-width: 768px) { 
     .det{
         max-width:50%;
     }
-    /* .card{
-        width: 14rem;
-    } */
+
 }
 .line3 {
     border-top: 4px solid var(--primary);
@@ -311,9 +325,13 @@ footer{
     color: var(--primary);
 }
 input {
-    min-width: 380px;
+    max-width: 220px ;
     /* background-image: url(img/arrow.svg);
     background-repeat: no-repeat; */
+}
+input:focus{
+    min-width: 320px !important;
+    transition: all 1.5s ease ;
 }
 .input-img{
     /* max-width: 380px;
