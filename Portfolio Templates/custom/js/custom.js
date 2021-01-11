@@ -4,14 +4,15 @@ const nav = document.querySelector('.nav');
 const menuNav = document.querySelector('.menu-nav');
 const navItems = document.querySelectorAll('.menu-nav__item');
 
+document.addEventListener("DOMContentLoaded", typeWriter);
+
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 particlesJS.load('particles-js', 'assets/particles.json', function() {
   console.log('callback - particles.js config loaded');
 });
 
-let showMenu = false;
 
-menuBtn.addEventListener('click', toggleMenu);
+let showMenu = false;
 
 function toggleMenu() {
   if(!showMenu) {
@@ -30,3 +31,21 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+menuBtn.addEventListener('click', toggleMenu);
+
+let i = 0;
+const myName = 'Olúwakáyòdé.'
+const speed = 100; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < myName.length) {
+    document.getElementById("name").innerHTML += myName.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', 'particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
