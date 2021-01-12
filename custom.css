@@ -432,3 +432,12 @@ li{
     color:white;
     padding:1rem;
   }
+  /* .contact{
+    padding:2rem;
+  } */
+  .half{
+    display: inline-block;
+  }
+  input{
+    background-color: #2b2b2b;
+  }
