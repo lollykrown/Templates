@@ -36,7 +36,7 @@ menuBtn.addEventListener('click', toggleMenu);
 
 let i = 0;
 const myName = 'Olúwakáyòdé.'
-const speed = 100; /* The speed/duration of the effect in milliseconds */
+const speed = 250; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
   if (i < myName.length) {

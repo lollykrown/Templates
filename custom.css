@@ -14,6 +14,7 @@
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
+  background-color: #000;
   /* overflow:auto; */
 }
 
@@ -25,6 +26,31 @@ a {
 li {
   list-style: none;
 }
+
+body{
+  animation: transitionIn 0.95s ease-in;
+}
+/* @keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+} */
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 
 /* Partcles Background */
@@ -102,7 +128,7 @@ li {
   left: 0;
   width: 100vw;
   opacity: 0.98;
-  z-index: 1;
+  z-index: 8;
   visibility: hidden;
 }
 
@@ -144,7 +170,7 @@ li {
 .nav .menu-nav__link {
   display: inline-block;
   font-size: 2rem;
-  /* text-transform: uppercase; */
+  /* animation: fadeInRight 1s ease-in-out ; */
   padding: 1.2rem 0;
   font-weight: 400;
   transition: all 0.5s ease-in-out;
@@ -177,13 +203,14 @@ li {
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
   }
 
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
 }
+
 
 
 
@@ -429,8 +456,7 @@ h2:hover {
 @media only screen and (min-width: 1200px) {}
 
 /* Projects */
-.stack,
-.wrapper {
+.stack {
   position: absolute;
   z-index: 1;
   top: 55px;
@@ -507,7 +533,7 @@ h2:hover {
   display: flex;
   z-index: 1;
   color: white;
-  padding: 1rem;
+  padding: 4rem;
 }
 .contact{
   margin: auto;
