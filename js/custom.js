@@ -50,3 +50,19 @@ particlesJS.load('particles-js', 'particles.json', function() {
   console.log('callback - particles.js config loaded');
 });
 
+// const button = document.getElementById('btn')
+
+// button.addEventListener('click', function(e){
+//   let x = e.clientX - e.target.offsetLeft;
+//   let y = e.clientY - e.target.offsetTop;
+
+//   let ripples = document.createElement('span');
+//   ripples.classList.add('ripples')
+//   ripples.style.left = x + 'px';
+//   ripples.style.top = y + 'px';
+//   this.appendChild(ripples)
+
+//   setTimeout(() => {
+//     ripples.remove()
+//   },1000)
+// })

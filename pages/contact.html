@@ -88,35 +88,28 @@
 
     <div id="page" class="wrapper">
       <div class="contact">
-        <h1>Contact me </h1>
-        <p>I am interested in freelance opportunities &#8211; especially ambitious or large projects.
-          However, if you have other request or question, don&#8217;t
-          hesitate to contact me using below form either.</p><br>
-        <div class="contact-form">
-          <form id="contact" autocomplete="off">
-            <ul>
-              <li class="half">
-                <input class="input__field" placeholder="Name" type="text" id="name" name="name" />
-                <label class="input__label " for="name"></label>
+        <h1 class="m5">Contact me </h1>
+        <p class="m5">I am interested in freelance opportunities  especially ambitious or large projects.
+          However, if you have other request or question, don't
+          hesitate to contact me using below form either.</p>
+        <div class="contact-form m5">
+          <form id="contact" autocomplete="off" name="reach" method="POST">
+            <div class="wr">
+              <div class="field name half">
+                <input type="text" name="fullname" id="fullname" placeholder="Kayode Agboola">
+                <label for="fullname">Name</label>
+              </div>
+              <div class="field half">
+                <input type="text" name="fullname" id="email" placeholder="example@example.com">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="field message">
+              <textarea class="input__field " placeholder="Message" id="msg" name="msg"></textarea>
+              <label for="msg">Message</label>
+            </div>
 
-              </li>
-              <li class="half">
-                <input class="input__field input__field--hoshi" placeholder="Email" type="email" name="email" />
-                <label class="input__label input__label--hoshi input__label--hoshi-color-2"></label>
-              </li>
-              <li>
-                <input class="input__field " placeholder="Subject" type="text" name="subject" />
-                <label class="input__label "></label>
-              </li>
-              <li>
-                <textarea class="input__field " placeholder="Message" name="msg"></textarea>
-                <label class="input__label"></label>
-              </li>
-              <li class="submit">
-                <input type="hidden" name="ip" value="41.73.134.172"></input>
-                <input id="submit" type="submit" class="flat-button" value="SEND" />
-              </li>
-            </ul>
+            <a href="#" class="btn" id="btn">SEND</a>
           </form>
         </div>
       </div>
@@ -128,9 +121,11 @@
     </div>
 
     <div id="rightNav">
-      <a><i class="fa fa-phone-alt" style="font-size:1.5rem;padding:0 1.1rem;"></i><span
+      <a class="icon"><i class="fa fa-phone-alt" style="font-size:1.5rem;padding:0 1.1rem;"></i><span
           style="font-size:1rem;">About</span></a>
       <div class="line"></div>
+      <p class="copy">&copy; 2021 <a href="https://lollykrown.xyz"
+        target="_blank">Ol&#250;wak&#225;y&#242;d&#233;.</a></p>  
     </div>
 
   </main>
@@ -140,24 +135,41 @@
   <script>
     function initMap() {
       // The location of Uluru
-      const uluru = {
-        lat: -25.344,
-        lng: 131.036
+      const onabola = {
+        lat: 6.542980,
+        lng: 3.380520
       };
       // The map, centered at Uluru
       const map = new google.maps.Map(document.getElementById("googleMap"), {
-        zoom: 5,
-        center: uluru,
+        zoom: 15,
+        center: onabola,
         // mapTypeId: 'satellite'
       });
 
       // The marker, positioned at Uluru
       const marker = new google.maps.Marker({
-        position: uluru,
+        position: onabola,
         map: map,
         mapId: 'MAP_ID'
       });
     }
+
+    const button = document.getElementById('btn')
+
+    button.addEventListener('click', function(e){
+      let x = e.clientX - e.target.offsetLeft;
+      let y = e.clientY - e.target.offsetTop;
+
+      let ripples = document.createElement('span');
+      ripples.classList.add('ripples')
+      ripples.style.left = x + 'px';
+      ripples.style.top = y + 'px';
+      this.appendChild(ripples)
+
+      setTimeout(() => {
+        ripples.remove()
+      },1000)
+    })
   </script>
   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgcL9WlQurkB-kRTgVhM62dKP7c8p1Hl4&callback=myMap"></script> -->
 
