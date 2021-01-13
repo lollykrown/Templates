@@ -15,7 +15,6 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   background-color: #000;
-  /* overflow:auto; */
 }
 
 a {
@@ -30,7 +29,7 @@ li {
 body{
   animation: transitionIn 0.95s ease-in;
 }
-/* @keyframes transitionIn {
+@keyframes transitionIn {
   from {
     opacity: 0;
     transform: rotateX(-90deg);
@@ -39,8 +38,8 @@ body{
     opacity: 1;
     transform: rotateX(0);
   }
-} */
-@keyframes transitionIn {
+}
+/* @keyframes transitionIn {
   from {
     opacity: 0;
     transform: translateY(100%);
@@ -49,7 +48,7 @@ body{
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
 
 
 
@@ -63,10 +62,11 @@ body{
   /* background-repeat: no-repeat; */
 }
 
+
 /* Header */
 .menu-btn {
   position: absolute;
-  z-index: 10;
+  z-index: 11;
   right: 1.2rem;
   top: 1rem;
   height: 20px;
@@ -227,7 +227,7 @@ body{
   z-index: 3;
 }
 
-.menu-nav li {
+.menu-social li {
   position: relative;
   left: -35px;
   /* margin:5px 0; */
@@ -236,7 +236,7 @@ body{
   transition: left 0.3s ease-out;
 }
 
-.menu-nav li:hover {
+.menu-social li:hover {
   left: -15px;
 }
 
@@ -261,6 +261,7 @@ body{
 }
 
 
+/* Home */
 .center-texts {
   position: absolute;
   top: 50%;
@@ -322,7 +323,6 @@ h2:hover {
   z-index: 3;
 
 }
-
 #rightNav i {
   color: #fff;
   padding: 0 25px;
@@ -336,9 +336,6 @@ h2:hover {
   transition: display 1s ease;
 }
 
-/* #rightNav a:hover {
-  color: #fff;
-} */
 #rightNav a:hover i {
   display: none;
 }
@@ -366,94 +363,6 @@ h2:hover {
   color: var(--orange)
 }
 
-/* Media Queries */
-@media screen and (min-width: 768px) {
-
-  /* .loader-style {
-      display: block;
-      width: 100%;
-      height: 100vh;
-  } */
-  .menu-btn {
-    visibility: hidden;
-  }
-
-  .nav {
-    visibility: visible;
-  }
-
-  .nav .menu-nav {
-    display: block;
-    transform: translateY(0);
-    height: 100%;
-    background: transparent;
-    text-align: right;
-  }
-
-  .nav .menu-nav__item {
-    display: inline;
-    padding-right: 1.5rem;
-  }
-
-  .nav .menu-nav__link {
-    font-size: 1.2rem;
-  }
-
-  .nav .menu-nav__link:hover {
-    color: rgb(255, 101, 47);
-    /* font-size:2rem; */
-    /* background-color:rgba(255,255,255,0.7); */
-    /* padding: 1.2rem 0; */
-    border-radius: 2px;
-  }
-
-  .center-texts {
-    display: block;
-  }
-
-  h4 {
-    color: white;
-    font-size: 32px;
-    line-height: 0;
-  }
-
-  h2 {
-    font-family: 'Londrina Shadow', cursive;
-    color: white;
-    font-size: 98px;
-    letter-spacing: 16px;
-    margin-top: 0;
-  }
-
-  .small {
-    color: white;
-    position: absolute;
-    right: 50px;
-    top: 94px;
-    animation: 1.6s fadeIn;
-    animation-fill-mode: forwards;
-    visibility: hidden;
-  }
-
-  #rightNav {
-    display: block;
-  }
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
 
 /* Projects */
 .stack {
@@ -461,11 +370,13 @@ h2:hover {
   z-index: 1;
   top: 55px;
   left: 36px;
-  width: calc(100vh-65px);
-  height: calc(100vh-55px);
+  /* width: calc(100vh-65px);
+  height: calc(100vh-55px); */
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(6, 1fr);
+  overflow-y: hidden;
+  padding-bottom:1rem;
+  padding-right: 1rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .stack .itembox {
@@ -528,12 +439,24 @@ h2:hover {
 }
 
 
+
 /* Contact */
+#googleMap{
+  display:none;
+}
 .wrapper {
+  position: absolute;
   display: flex;
   z-index: 1;
   color: white;
-  padding: 4rem;
+  top: 65px;
+  left: 36px;
+  width: 94%;
+  height: calc(100vh-70px);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1rem;;
 }
 .contact{
   margin: auto;
@@ -541,9 +464,9 @@ h2:hover {
 .m5{
 margin:0 20px;
 }
-form{
-    padding:2rem 2rem 0 0;
-  }
+/* form{
+    padding:1rem 1rem 0 0;
+  } */
 
 .field {
   display: flex;
@@ -563,7 +486,7 @@ label, input {
 }
 
 input,textarea, .btn {
-  font-size: 1.5em;
+  font-size: 1.2em;
   border: 0;
   border-bottom: 1px solid rgba(255, 255, 255,0.5);
   font-family: inherit;
@@ -575,20 +498,28 @@ input,textarea, .btn {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }
-input:focus {
+
+input:focus, textarea:focus {
   outline: 0;
-  border-bottom: 1.5px solid #fff;
+  border-bottom: 1.75px solid #fff;
+}
+input:focus {
+  animation: borderLine 0.75s ease-in-out;
+}
+@keyframes borderLine{
+  0%{
+    width:0;
+  }
+  100%{
+    width:100%;
+  }
 }
 label {
-  /* text-transform: uppercase; */
   letter-spacing: 0.05em;
   padding: 0 4px;
 }
-.wr{
-  display: flex;
-}
 .half {
-  width:50%;
+  width:100%;
 }
 input:placeholder-shown + label {
   cursor: text;
@@ -597,7 +528,7 @@ input:placeholder-shown + label {
   overflow: hidden;
   text-overflow: ellipsis;
   transform-origin: left bottom;
-  transform: translate(0, 2.125rem) scale(1.5);
+  transform: translate(0, 2.125rem) scale(1.3);
 }
 ::-webkit-input-placeholder {
   opacity: 0;
@@ -608,7 +539,7 @@ input:focus::-webkit-input-placeholder, textarea:focus::placeholder {
 }
 input:not(:placeholder-shown) + label,
 input:focus + label {
-  transform: translate(0, 0) scale(1);
+  transform: translate(0, 0) scale(0.8);
   cursor: pointer;
 }
 .btn {
@@ -617,10 +548,10 @@ input:focus + label {
   cursor: pointer;
   text-align: center;
   padding:10px 0;
-  position: relative;
   text-decoration: none;
   letter-spacing: 2px;
   overflow: hidden;
+  position: relative;
 }
 
 .btn:hover {
@@ -628,7 +559,7 @@ input:focus + label {
   color: #000;
   font-weight:500;
 }
-.ripples{
+.btn span{
   position: absolute;
   background:rgba(255,101,47,0.7);
   transform: translate(-50%,-50%);
@@ -648,3 +579,123 @@ input:focus + label {
     opacity:0;
   }
 }
+
+
+
+
+/* Media Queries */
+/* Extra small devices (phones, 600px and down) 
+Tha is the default*/ 
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* Projects */
+  .stack{
+    /* grid-template-rows: repeat(3, 1fr); */
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom:0;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    display: block;
+    transform: translateY(0);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+  }
+
+  .nav .menu-nav__item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+
+  .nav .menu-nav__link {
+    font-size: 1.2rem;
+  }
+
+  .nav .menu-nav__link:hover {
+    color: rgb(255, 101, 47);
+    /* font-size:2rem; */
+    /* background-color:rgba(255,255,255,0.7); */
+    /* padding: 1.2rem 0; */
+    border-radius: 2px;
+  }
+
+  /* home */
+  .center-texts {
+    display: block;
+  }
+
+  h4 {
+    color: white;
+    font-size: 32px;
+    line-height: 0;
+  }
+
+  h2 {
+    font-family: 'Londrina Shadow', cursive;
+    color: white;
+    font-size: 98px;
+    letter-spacing: 16px;
+    margin-top: 0;
+  }
+
+  .small {
+    color: white;
+    position: absolute;
+    right: 50px;
+    top: 94px;
+    animation: 1.6s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+  }
+
+  #rightNav {
+    display: block;
+  }
+
+  /* Projects */
+  .stack{
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Contact */
+  .half {
+    width:50%;
+  }
+  .wr{
+    display: flex;
+  }
+  
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+  /* Projects */
+  .stack{
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    width: calc(100vh-65px);
+    height: calc(100vh-55px);
+    padding-bottom:0;
+  }
+  #googleMap{
+    display: block;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

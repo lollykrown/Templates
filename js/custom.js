@@ -4,14 +4,6 @@ const nav = document.querySelector('.nav');
 const menuNav = document.querySelector('.menu-nav');
 const navItems = document.querySelectorAll('.menu-nav__item');
 
-document.addEventListener("DOMContentLoaded", typeWriter);
-
-/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', 'assets/particles.json', function() {
-  console.log('callback - particles.js config loaded');
-});
-
-
 let showMenu = false;
 
 function toggleMenu() {
@@ -34,22 +26,10 @@ function toggleMenu() {
 
 menuBtn.addEventListener('click', toggleMenu);
 
-let i = 0;
-const myName = 'Olúwakáyòdé.'
-const speed = 250; /* The speed/duration of the effect in milliseconds */
-
-function typeWriter() {
-  if (i < myName.length) {
-    document.getElementById("name").innerHTML += myName.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', 'particles.json', function() {
+particlesJS.load('particles-js', 'assets/particles.json', function() {
   console.log('callback - particles.js config loaded');
 });
-
 // const button = document.getElementById('btn')
 
 // button.addEventListener('click', function(e){
