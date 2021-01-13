@@ -499,11 +499,11 @@ input,textarea, .btn {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-input:focus, textarea:focus {
+.field>input:focus, textarea:focus {
   outline: 0;
   border-bottom: 1.75px solid #fff;
 }
-input:focus {
+.field>input:focus {
   animation: borderLine 0.75s ease-in-out;
 }
 @keyframes borderLine{
@@ -516,12 +516,12 @@ input:focus {
 }
 label {
   letter-spacing: 0.05em;
-  padding: 0 4px;
+  padding: 0;
 }
 .half {
   width:100%;
 }
-input:placeholder-shown + label {
+.field>input:placeholder-shown + label {
   cursor: text;
   max-width: 100%;
   white-space: nowrap;
@@ -537,8 +537,8 @@ input:placeholder-shown + label {
 input:focus::-webkit-input-placeholder, textarea:focus::placeholder {
   opacity: 1;
 }
-input:not(:placeholder-shown) + label,
-input:focus + label {
+.field>input:not(:placeholder-shown) + label,
+.field>input:focus + label {
   transform: translate(0, 0) scale(0.8);
   cursor: pointer;
 }
@@ -550,24 +550,23 @@ input:focus + label {
   padding:10px 0;
   text-decoration: none;
   letter-spacing: 2px;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
 }
-
 .btn:hover {
   background-color: #fff;
   color: #000;
   font-weight:500;
 }
-.btn span{
+/* .btn span{
   position: absolute;
   background:rgba(255,101,47,0.7);
   transform: translate(-50%,-50%);
   pointer-events: none;
   border-radius: 50%;
   animation: animate 1s linear infinite;
-}
-@keyframes animate{
+} */
+/* @keyframes animate{
   0%{
     width:0px;
     height: 0px;
@@ -578,7 +577,7 @@ input:focus + label {
     height: 1500px;
     opacity:0;
   }
-}
+} */
 
 
 
