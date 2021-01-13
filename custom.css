@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Jacques+Francois+Shadow&family=Poppins:wght@200;300;500;600;800&display=swap");
 
 :root {
-  --orange: #ff652f;
+  --orange: #000fff;
 }
 
 * {
@@ -54,7 +54,6 @@ body{
 
 /* Partcles Background */
 #particles-js {
-  /* background-color: blue; */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(keypad.jpg);
   height: 100vh;
   background-size: cover;
@@ -157,6 +156,7 @@ body{
 .nav .menu-nav__item {
   transform: translateX(100vw);
   transition: all 0.5s ease-in-out;
+  transition: 0.5s;
 }
 
 .nav .menu-nav__item.open {
@@ -170,7 +170,6 @@ body{
 .nav .menu-nav__link {
   display: inline-block;
   font-size: 2rem;
-  /* animation: fadeInRight 1s ease-in-out ; */
   padding: 1.2rem 0;
   font-weight: 400;
   transition: all 0.5s ease-in-out;
@@ -192,26 +191,37 @@ body{
   transition-delay: 0.55s;
 }
 
+
+.menu-nav:hover li a{
+  transform:scale(1.5);
+  opacity: 2;
+  filter: blur(5px);
+}
 .nav .menu-nav__link:hover {
-  /* font-size: 80px; */
-  color: #fff;
-  text-align: center;
-  /* -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate; */
+  color: rgb(255, 101, 47);
+  transform:scale(1.5);
+  opacity: 2;
+  filter: blur(0);
+  /* border-radius: 2px; */
 }
-
-@keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
+.nav .menu-nav__link:before {
+  content:'';
+  position:absolute;
+  top:20px;
+  left:0px;
+  width: 100%;
+  height:45%;
+  background: #fff;
+  transition: 0.5s;
+  transform-origin: right;
+  transform: scale(0);
+  z-index:-1
 }
-
-
+.nav .menu-nav__link:hover:before {
+  transition: 0.5s;
+  transform-origin: left;
+  transform: scale(1);
+}
 
 
 /* social_icons */
@@ -298,6 +308,15 @@ h2:hover {
   visibility: hidden;
 }
 
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
 @keyframes fadeIn {
   96% {
     visibility: hidden;
@@ -362,6 +381,89 @@ h2:hover {
 .copy a:hover{
   color: var(--orange)
 }
+
+
+
+/* About */
+.det{
+  overflow:hidden;
+}
+.about__container, .wrapper{
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  color: white;
+  top: 70px;
+  left: 36px;
+  width: 94%;
+  height: calc(100vh-70px);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1rem;;
+}
+.about, .box{
+  padding:1rem;
+  flex: 1 1 0px;
+  margin: auto;
+}
+.box{
+  display:none;
+}
+.box div{
+  position: absolute;
+  top:0;
+  left: 0;
+  width:80%;
+  height:100%;
+  transform-style: preserve-3d;
+}
+.box div span{
+  position: absolute;
+  top:0;
+  left: 0;
+  display: block;
+  width:100%;
+  height:80%;
+  background: linear-gradient(0deg, #f1f1f1, rgb(77, 77, 77), #f1f1f1);
+  border-radius: 20px;
+  text-align: center;
+}
+.box div span:nth-child(1){
+  transform: rotateX(0deg);
+}
+.box div span:nth-child(2){
+  transform: rotateX(45deg);
+}
+.box div span:nth-child(3){
+  transform: rotateX(-45deg);
+}
+.box div span:nth-child(4){
+  transform: rotateX(90deg);
+}
+.box div span:nth-child(5){
+  transform: rotateX(-90deg);
+}
+.box div span:nth-child(6){
+  transform: rotateX(135deg);
+}
+.box div span:nth-child(7){
+  transform: rotateX(-135deg);
+}
+.box div span:nth-child(7){
+  transform: rotateX(180deg);
+}
+
+@keyframes anim{
+  0%{
+    transform:perspective(1000px) rotateX(0deg)
+  }
+  100%{
+    transform:perspective(1000px) rotateX(359deg)
+  }
+}
+
+
 
 
 /* Projects */
@@ -440,24 +542,12 @@ h2:hover {
 
 
 
+
 /* Contact */
 #googleMap{
   display:none;
 }
-.wrapper {
-  position: absolute;
-  display: flex;
-  z-index: 1;
-  color: white;
-  top: 65px;
-  left: 36px;
-  width: 94%;
-  height: calc(100vh-70px);
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
-  padding-right: 1rem;;
-}
+
 .contact{
   margin: auto;
 }
@@ -553,31 +643,14 @@ input:focus::-webkit-input-placeholder, textarea:focus::placeholder {
   /* overflow: hidden; */
   position: relative;
 }
-.btn:hover {
-  background-color: #fff;
-  color: #000;
-  font-weight:500;
+
+.btn:hover{
+  color:#000;
+  background: #fff;
+  box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff ;
+  transition-delay: 0.2s;
 }
-/* .btn span{
-  position: absolute;
-  background:rgba(255,101,47,0.7);
-  transform: translate(-50%,-50%);
-  pointer-events: none;
-  border-radius: 50%;
-  animation: animate 1s linear infinite;
-} */
-/* @keyframes animate{
-  0%{
-    width:0px;
-    height: 0px;
-    opacity:1.2;
-  }
-  100%{
-    width:1500px;
-    height: 1500px;
-    opacity:0;
-  }
-} */
+
 
 
 
@@ -622,14 +695,6 @@ Tha is the default*/
     font-size: 1.2rem;
   }
 
-  .nav .menu-nav__link:hover {
-    color: rgb(255, 101, 47);
-    /* font-size:2rem; */
-    /* background-color:rgba(255,255,255,0.7); */
-    /* padding: 1.2rem 0; */
-    border-radius: 2px;
-  }
-
   /* home */
   .center-texts {
     display: block;
@@ -663,6 +728,21 @@ Tha is the default*/
     display: block;
   }
 
+  /* About */
+  .about, .box{
+    padding:0 0.5rem;
+    max-width: 50%;
+  }
+  .box{
+    display:block;
+    margin: 10px;
+    transform: perspective(1000px) rotateY(-45deg);
+    width:100px;
+    height:600px;
+    transform-style: preserve-3d;
+    animation:anim 6s linear infinite;
+    color: #000;
+  }
   /* Projects */
   .stack{
     grid-template-rows: repeat(3, 1fr);
@@ -693,6 +773,15 @@ Tha is the default*/
   }
   #googleMap{
     display: block;
+  }
+
+  /* About */
+  .about, .box{
+    padding:0 3rem;
+    max-width: 50%;
+  }
+  .box{
+    margin: 10px 90px;
   }
 }
 
