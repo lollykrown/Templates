@@ -239,34 +239,41 @@ body{
 
 .menu-social li {
   position: relative;
-  left: -35px;
+  left: -30px;
   /* margin:5px 0; */
   text-align: end;
-  padding: 8px 10px 8px 22px;
   transition: left 0.3s ease-out;
 }
+.menu-social li a {
+  display: inline-block;
+  padding: 12px 12px 12px 22px;
 
+}
 .menu-social li:hover {
   left: -15px;
 }
 
 .side-link:nth-child(1) {
-  transition-delay: 0.25s;
+  left: -30px;
+  font-size: 8px;
+  padding: 5px 0;
+}
+.side-link:nth-child(1):hover {
+  left: -30px;
+}
+.side-link:nth-child(2) {
   background-color: #4868ad;
 }
 
-.side-link:nth-child(2) {
-  transition-delay: 0.35s;
+.side-link:nth-child(3) {
   background-color: #4e545a;
 }
 
-.side-link:nth-child(3) {
-  transition-delay: 0.45s;
+.side-link:nth-child(4) {
   background-color: #3299ff;
 }
 
-.side-link:nth-child(4) {
-  transition-delay: 0.55s;
+.side-link:nth-child(5) {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
@@ -743,6 +750,9 @@ Tha is the default*/
     transform-style: preserve-3d;
     animation:anim 6s linear infinite;
     color: #000;
+  }
+  .box:hover{  
+    animation:anim 28s linear infinite;
   }
   /* Projects */
   .stack{
