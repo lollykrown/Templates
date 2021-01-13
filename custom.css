@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Jacques+Francois+Shadow&family=Poppins:wght@200;300;500;600;800&display=swap");
 
 :root {
-  --orange: #000fff;
+  --orange: #ff652f;
 }
 
 * {
@@ -419,13 +419,14 @@ h2:hover {
   transform-style: preserve-3d;
 }
 .box div span{
+  color:white;
   position: absolute;
   top:0;
   left: 0;
   display: block;
   width:100%;
   height:80%;
-  background: linear-gradient(0deg, #f1f1f1, rgb(77, 77, 77), #f1f1f1);
+  background: linear-gradient(0deg, rgba(241,241,241,0.1), rgba(77, 77, 77,0.1), rgba(241,241,241,0.1));
   border-radius: 20px;
   text-align: center;
 }
@@ -450,7 +451,7 @@ h2:hover {
 .box div span:nth-child(7){
   transform: rotateX(-135deg);
 }
-.box div span:nth-child(7){
+.box div span:nth-child(8){
   transform: rotateX(180deg);
 }
 
