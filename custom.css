@@ -101,6 +101,36 @@ body{
 }
 
 /* Header */
+.swap-on-hover {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.swap-on-hover {
+  position: relative;	
+	margin:  0 auto;
+}
+
+/* Select the image and make it absolute to the container */
+.swap-on-hover img {
+  position: absolute;
+  top:10px;
+  left:5px;
+	overflow: hidden;
+	width: 48px;
+	height: 48px;
+}
+
+.swap-on-hover .swap-on-hover__front-image {
+  z-index: 8888;
+  transition: opacity .5s linear;
+  cursor: pointer;
+}
+.brand-img:hover > .swap-on-hover__front-image{
+  opacity: 0;
+}
+
 .menu-btn {
   position: absolute;
   z-index: 11;
@@ -159,13 +189,14 @@ body{
   transform: rotate(-45deg) translate(3px, -7px);
 }
 
+
 .nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   opacity: 0.98;
-  z-index: 8;
+  z-index: 9;
   visibility: hidden;
 }
 
@@ -248,6 +279,8 @@ body{
   transform-origin: left;
   transform: scale(1);
 }
+
+
 
 
 /* social_icons */
@@ -564,7 +597,7 @@ body{
 }
 
 .text {
-  color: white;
+  color: #000;
   font-size: 20px;
   position: absolute;
   background: var(--green);
