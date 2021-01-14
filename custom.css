@@ -115,8 +115,8 @@ body{
 /* Select the image and make it absolute to the container */
 .swap-on-hover img {
   position: absolute;
-  top:10px;
-  left:5px;
+  top:6px;
+  left:13px;
 	overflow: hidden;
 	width: 48px;
 	height: 48px;
