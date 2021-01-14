@@ -645,7 +645,6 @@ label, input {
   transition: all 0.2s;
   touch-action: manipulation;
 }
-
 input,textarea, .btn {
   font-size: 1.2em;
   border: 0;
@@ -702,6 +701,10 @@ input:focus::-webkit-input-placeholder, textarea:focus::placeholder {
 .field>input:focus + label {
   transform: translate(0, 0) scale(0.8);
   cursor: pointer;
+  color:var(--green);
+}
+.message textarea:focus + label{
+  color:var(--green);
 }
 .btn {
   display:inline-block;
