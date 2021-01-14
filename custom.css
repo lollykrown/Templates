@@ -714,12 +714,12 @@ input:focus::-webkit-input-placeholder, textarea:focus::placeholder {
   padding:10px 0;
   text-decoration: none;
   letter-spacing: 2px;
-  color:var(--green);
+  color:#fff;
   position: relative;
 }
 
 .btn:hover{
-  color:#000;
+  color: var(--green);
   background: #fff;
   box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff ;
   transition-delay: 0.2s;
