@@ -332,7 +332,9 @@ body{
 .side-link:nth-child(5) {
   background-color: #06d755;
 }
-
+.offline{
+  width:max-content;
+}
 
 
 /* Home */
