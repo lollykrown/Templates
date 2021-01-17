@@ -7,6 +7,7 @@ const urlsToCache = [
             '/contact.html',
             '/custom.min.css',
             '/keypad.jpg',
+            '/index.js',
             '/js/app.min.js',
             '/js/custom.min.js',
             '/js/particles.min.js',
