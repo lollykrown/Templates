@@ -1,2 +1,2 @@
-const me_name = 'Kayode Agboola'
+const me_name = 'Kay Agboola'
 console.log(me_name);
