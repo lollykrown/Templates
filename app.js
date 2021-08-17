@@ -20,7 +20,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(morgan('tiny'))
 
-app.use(express.static(path.join(__dirname, '/public/')));
+app.use(express.static(path.join(__dirname, 'public/')));
 app.use(favicon(path.join(__dirname, 'public', '/img/favicon.ico')));
 app.set('views', './src/views');
 app.set('view engine', 'ejs');
