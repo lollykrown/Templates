@@ -109,7 +109,7 @@ function mailingController() {
             transporter.sendMail(mailOptions, function (err, info) {
               if (err) {
                 req.flash('error',"An unknown error occured!")
-                res.redirect(302, '/') 
+                res.render('indexx.ejs', {messages: req.flash('info'), err: req.flash('error')}) 
                 debug(err);
               }
               debug(`Email sent: ${info.response}`);
