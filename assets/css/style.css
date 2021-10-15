@@ -1011,6 +1011,7 @@ p {
 
 main.main-06 {
   background: #0a0a0a;
+  box-shadow: 5px 10px 15px 10px rgba(0,0,0,0.35);
   overflow: hidden;
 }
 
