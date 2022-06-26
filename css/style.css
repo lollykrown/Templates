@@ -1,10 +1,13 @@
 :root {
-    --primary: rgb(255, 94, 57);
+    --primary: #1947a4;
+    --orange: #e9802a;
     --text: #090E3F;
     --white: #ffffff;
     --background: #F1F1F1;
     --pink: rgb(198, 15, 80);
     --yellow: rgb(255,170,57);
+    --blue: #1947a4;
+    /* ff6600, 1947a4 */
 }
 
 body {
@@ -31,23 +34,10 @@ header{
     z-index: 1000 !important;
 }
 .logo {
+    /* box-shadow: 1px 1px 2px #bbbbbb; */
     pointer-events: none;
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .logo {
-      animation: logo-spin infinite 20s linear;
-    }
-  }
-  
-  @keyframes logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+}
+
 .navbar-brand {
     color: var(--primary) !important;
     font-weight: 600;
@@ -55,6 +45,7 @@ header{
 header .nav-link {
     color: var(--text) !important;
     font-weight: 400;
+    min-width: fit-content;
 }
 header .nav-link:hover {
     background-color: rgb(255, 94, 57, 0.2);
@@ -64,8 +55,7 @@ header .nav-link:hover {
     border-radius: 3px;
 }
 #helpline,#helpline:hover {
-    background-image: linear-gradient(to right, var(--primary), var(--pink));
-    /* background-color: var(--primary); */
+    background-image: linear-gradient(to right, var(--orange), var(--primary));
     color: var(--white) !important;
     border-radius: 4px;
 }
@@ -73,7 +63,7 @@ header .nav-link:hover {
     color: var(--primary) !important;
     padding-left: 0 !important;
     background: none !important;
-    border-bottom: 4px solid var(--primary);
+    border-bottom: 4px solid var(--orange);
     width: 30%;
     border-radius: 3px;
 }
@@ -82,7 +72,7 @@ header .nav-link:hover {
     top: 0;
     padding: 0px 16px;
     width: 100%;
-    background-color:#003E5D;
+    background-color:var(--blue);
     transition: all 1s ease-in-out;
   }
 .sticky + #top {
@@ -90,6 +80,10 @@ header .nav-link:hover {
  }
 .sticky .nav-link{
     color: var(--white) !important;
+}
+.sticky .logo{
+    background-color: var(--background) !important;
+    padding: 0 8px 0 8px;
 }
 .sticky .nav-link:hover {
     background-color: rgba(255,255,255, 0.5);
@@ -117,7 +111,7 @@ header .nav-link:hover {
     border-radius: 3px;
 }
 .arrow {
-    background-color: rgba(255, 94, 57, 0.2);
+    background-color: rgba(25,71,164, 0.2);
     padding-top: 10px;
     color: var(--primary)
 }
@@ -237,7 +231,7 @@ details > summary {
   }
 
 /* charts */
-.line2 {
+/* .line2 {
     border-top: 4px solid var(--primary);
     width: 120px;
     margin: 20px auto;
@@ -273,13 +267,13 @@ details > summary {
 }
 .recovered-figures{
     color: rgb(0,186,0)
-}
+} */
 
 
 
 /* footer */
 footer{
-    background-color: #003E5D;
+    background-color: var(--blue);
     border-top-right-radius: 140px;
     margin-top:150px;
 }
@@ -330,7 +324,7 @@ footer{
 }
 .links a:hover, .footer-nav a:hover{
     font-weight:500;
-    color: var(--primary);
+    color: var(--orange);
 }
 input {
     max-width: 220px ;

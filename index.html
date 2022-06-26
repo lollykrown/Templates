@@ -117,13 +117,44 @@
 </head>
 
 <body>
+    <!-- ======= Modal ======= -->
+    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contact Union Care Consult</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <div class="mb-3">
+                    <label for="name" class="col-form-label">Name:</label>
+                    <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="col-form-label">Email Address:</label>
+                        <input type="text" class="form-control" id="email" 
+                        pattern="^([a-z\d_\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$" required>
+                    </div>
+                    <div class="mb-3">
+                    <label for="message-text" class="col-form-label">Message:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Send message</button>
+                </div>
+            </form>
+          </div>
+        </div>
+    </div>
     <!-- ======= Header ======= -->
     <header id="header">
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light py-2">
                 <a class="navbar-brand" href="#">
-                    <img class="img-fluid logo" src="img/logo.svg" alt="logo" width="36px" height="36px" />
-                    COVID - 19
+                    <img class="img-fluid logo" src="uc.png" alt="logo" width="200px" height="65px" />
                 </a>
                 <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav">
@@ -135,19 +166,19 @@
                             <a class="nav-link active" href="#">Home</a>
                         </li>
                         <li class="nav-item mt-2 mx-3">
-                            <a class="nav-link" href="#transmission">Transmission</a>
+                            <a class="nav-link" href="#transmission">Plans</a>
                         </li>
                         <li class="nav-item mt-2 mx-3">
-                            <a class="nav-link " href="#symptoms">Symptoms</a>
+                            <a class="nav-link " href="#symptoms">Blog</a>
                         </li>
                         <li class="nav-item mt-2 mx-3">
-                            <a class="nav-link" href="#prevention">Prevention</a>
+                            <a class="nav-link" href="#prevention">About us</a>
                         </li>
-                        <li class="nav-item mt-2 ms-3 me-5">
+                        <!-- <li class="nav-item mt-2 ms-3 me-5">
                             <a class="nav-link" href="#stats">Situation</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item mt-2 mx-3">
-                            <a class="nav-link px-4 py-2" id="helpline" href="#contact">Helpline</a>
+                            <a class="nav-link px-4 py-2" id="helpline" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -162,9 +193,9 @@
                 <div class="row pb-5">
                     <div class="col-md-6">
                         <br><br><br>
-                        <p class="stay text-uppercase">stay home</p>
+                        <p class="stay text-uppercase">about us</p>
                         <div class="line"></div><br>
-                        <h1 class="text-uppercase main-text">stay safe<br> from covid-19</h1>
+                        <h1 class="text-uppercase main-text">what we<br> do differently</h1>
 
                         <br />
                         <p>Coronavirus disease (COVID-19) was discovered in 2019. It is
@@ -175,14 +206,15 @@
                         </p><br><br>
 
                         <div class="d-flex ">
-                            <a class="btn arrow" href="https://emedicine.medscape.com/article/2500114-overview">Learn more <img src="img/arrow.svg" width="36" height="36"
-                                    alt="arrow-right" /></a>
+                            <button type="button" class="btn arrow" data-bs-toggle="modal" data-bs-target="#formModal">
+                                Get a Quote <img src="img/arrow.svg" width="36" height="36" alt="arrow-right" />
+                            </button>
                             <a noopener noreferrer class="btn px-5 py-3 mr-4 play" href="https://covid19.ncdc.gov.ng/media/nitp.mp4"><i class="fa fa-play-circle"></i> Play video
                                 now</a>
                         </div>
                     </div>
                     <div class="d-none d-md-block col-md-6 mt-5">
-                        <img class="img-fluid" src="img/placeholder1.svg" alt="" />
+                        <img class="img-fluid mt-5" src="img/care.svg" alt="" />
                     </div>
                 </div>
             </div>
@@ -329,7 +361,7 @@
                     </figure>
                     <div class="col-md-6 ps-5">
                         <br><br><br>
-                        <h2>Guidelines for <br>Home Quarantine</h2><br>
+                        <h2>Onboarding with <br>Union Care Consult</h2><br>
                         <div>
                             <details>
                                 <summary>Stay away from elderly people and children</summary>
@@ -361,7 +393,7 @@
                 </div>
             </div>
         </section>
-        <section id="stats">
+        <!-- <section id="stats">
             <div class="container py-5">
                 <div class="chart-titles text-center">
                     <h2>Coronavirus disease <br> (COVID-19) outbreak situation</h2>
@@ -400,11 +432,10 @@
                     </div>
                 </div>
 
-                <!-- <div class="mt-5 mx-auto" id="chart_div" style="width: 900px; height: 500px;"></div> -->
                 <div class="mt-5 mx-auto d-none d-md-block" id="chart" style="width: 100%; height: 700px;"></div>
             </div>
 
-        </section>
+        </section> -->
     </main>
 
     <!-- ======= Footer ======= -->
@@ -412,7 +443,7 @@
         <section class="container" id="contact">
                 <div class="contact text-center col-sm-8 col-md-6">
                     <h2>Do you have any symptoms?<br>Let us know</h2><br>
-                    <a class="btn arrow" href="">Contact NCDC <img src="img/arrow.svg" width="36" height="36"
+                    <a class="btn arrow" href="mailto:joe_kayu@yahoo.com">Contact Us <img src="img/arrow.svg" width="36" height="36"
                             alt="arrow-right" /></a>
                 </div>
 
@@ -453,8 +484,7 @@
 
                 <nav class="navbar navbar-expand-md navbar-light pb-3">
                     <a class="navbar-brand" href="#">
-                        <img class="img-fluid" src="img/logo.svg" alt="logo" width="36px" height="36px" />
-                        COVID - 19
+                        <img class="img-fluid logo" src="uc.png" alt="logo" width="200px" height="65px" />
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav">
