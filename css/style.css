@@ -199,8 +199,6 @@ h6, details>summary, details>p{
 }
 
 
-
-
 /* prevention */
 .dot{
     height: 8px;
@@ -234,47 +232,7 @@ details > summary {
     padding: 10px;
     margin-bottom: 20px;
     box-shadow: 1px 1px 2px #bbbbbb;
-  }
-
-/* charts */
-/* .line2 {
-    border-top: 4px solid var(--primary);
-    width: 120px;
-    margin: 20px auto;
-    border-radius: 3px;
 }
-.updated, .det, h6 {
-    color: #A1A1A1;
-}
-.confirmed {
-    background-color: rgba(255, 170, 57, 0.2);
-    border-bottom: 4px solid rgb(255, 170, 57);
-}
-.con-figures {
-    color: rgb(255, 170, 57);
-}
-.deaths {
-    background-color: rgba(255,61,57, 0.2);
-    border-bottom: 4px solid rgb(255,61,57);
-}
-.death-figures {
-    color: rgb(255,61,57);
-}
-.countries{
-    background-color: rgba(79,192,255,0.2);
-    border-bottom: 4px solid rgb(79,192,255);
-}
-.countries-figures{
-    color: rgb(79,192,255);
-}
-.recovered{
-    background-color: rgba(0,186,0,0.2);
-    border-bottom: 4px solid rgb(0,186,0);
-}
-.recovered-figures{
-    color: rgb(0,186,0)
-} */
-
 
 
 /* footer */
@@ -333,16 +291,12 @@ footer{
 }
 input {
     max-width: 220px ;
-    /* background-image: url(img/arrow.svg);
-    background-repeat: no-repeat; */
 }
 input:focus{
     min-width: 320px !important;
     transition: all 1.5s ease ;
 }
 .input-img{
-    /* max-width: 380px;
-    height:100%; */
     padding:0;
     margin:0;
 }
