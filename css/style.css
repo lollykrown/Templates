@@ -112,6 +112,7 @@ header .nav-link:hover {
     border-radius: 3px;
 }
 .arrow {
+    background-image: linear-gradient(to right, rgba(233,128,42,0.6), rgba(25,71,164, 0.2));
     background-color: rgba(25,71,164, 0.2);
     padding-top: 10px;
     color: var(--primary)
