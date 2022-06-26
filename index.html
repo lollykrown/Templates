@@ -47,8 +47,8 @@
             <form name="contact" netlify>
                 <div class="modal-body">
                     <div class="mb-3">
-                    <label for="name" class="col-form-label">Name:</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
+                        <label for="name" class="col-form-label">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="col-form-label">Email Address:</label>
@@ -56,8 +56,12 @@
                         pattern="^([a-z\d_\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$" required>
                     </div>
                     <div class="mb-3">
-                    <label for="message-text" class="col-form-label">Message:</label>
-                    <textarea class="form-control" name="message" id="message-text"></textarea>
+                        <label for="phone" class="col-form-label">Phone Number:</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Message:</label>
+                        <textarea class="form-control" name="message" id="message-text"></textarea>
                     </div>
                 </div>
                 <div class="modal-footer">
