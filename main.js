@@ -1,9 +1,3 @@
-// function hideIcon(self) {
-//     self.style.backgroundImage = 'none';
-// }
-
-// window.onscroll = function() {myFunction()};
-
 const header = document.getElementById("header");
 const sticky = header.offsetTop;
 

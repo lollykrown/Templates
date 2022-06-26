@@ -57,7 +57,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="phone" class="col-form-label">Phone Number:</label>
-                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                        <input type="tel" class="form-control" id="phone" name="phone">
                     </div>
                     <div class="mb-3">
                         <label for="message-text" class="col-form-label">Message:</label>
@@ -65,8 +65,8 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Send message</button>
+                    <button type="button" class="btn arrow" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn helpline">Send message</button>
                 </div>
             </form>
           </div>
@@ -95,13 +95,13 @@
                             <a class="nav-link " href="#symptoms">Blog</a>
                         </li>
                         <li class="nav-item mt-2 mx-3">
-                            <a class="nav-link" href="#prevention">About us</a>
+                            <a class="nav-link" href="#prevention">About</a>
                         </li>
                         <!-- <li class="nav-item mt-2 ms-3 me-5">
                             <a class="nav-link" href="#stats">Situation</a>
                         </li> -->
                         <li class="nav-item mt-2 mx-3">
-                            <a class="nav-link px-4 py-2" id="helpline" href="#contact">Contact</a>
+                            <a class="nav-link px-4 py-2 helpline" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -116,8 +116,8 @@
                 <div class="row pb-5">
                     <div class="col-md-6">
                         <br><br><br>
-                        <p class="stay text-uppercase">about us</p>
-                        <div class="line"></div><br>
+                        <p class="ab text-uppercase fw-normal">about us</p>
+                        <div class="line-footer"></div><br>
                         <h1 class="text-uppercase main-text">what we<br> do differently</h1>
 
                         <br />
@@ -372,7 +372,7 @@
 
                 <div class="row footer-links">
                     <div class="col-md-4 col-sm-6">
-                        <p>About</p>
+                        <p class="line-footer text-white">About</p>
                         <ul class="links">
                             <li><a href="#blog">Who we are</a></li>
                             <li><a href="#about">Terms & Conditions</a></li>
@@ -381,7 +381,7 @@
                         </ul>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <p>Contact</p>
+                        <p class="text-white line-footer">Contact</p>
                         <ul class="links">
                             <li>11, onabola street,<br>Pedro, Lagos</li>
                             <li><a href="mailto:joe_kayu@yahoo.com">joe_kayu@yahoo.com</a></li>
@@ -390,7 +390,7 @@
                     <div class="col-md-4 col-sm-6">
                         <h4 class="mb-4">Get our recent blog & <br>newsletter</h4>
                         <div class="input-group mb-3">
-                            <input type="email" class="form-control email" onchange="hideIcon(this);" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <input type="email" class="form-control email" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <img src="img/arrow.svg" class="input-img" id="basic-addon2" width="48" height="48"
                             alt="arrow-right" />
