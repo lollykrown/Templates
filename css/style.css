@@ -10,6 +10,9 @@
     /* ff6600, 1947a4 e9802a 132fb1 0000fe */
 }
 
+.blue{
+    color: var(--primary)
+}
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -17,7 +20,7 @@ body {
     color: var(--text);
     background-color: transparent;
 }
-header, #top, #testimonials {
+header, #top, #testimonials, .bg {
     background-color: var(--background);
 }
 #testimonials, #onboarding,
@@ -344,7 +347,7 @@ input {
     max-width: 220px ;
 }
 input:focus{
-    min-width: 320px !important;
+    min-width: 280px !important;
     transition: all 1.5s ease ;
 }
 .input-img{
@@ -358,6 +361,9 @@ input:focus{
     border-bottom: 4px solid var(--orange);
     width: 30px;
     border-radius: 3px;
+}
+.moi{
+    font-size: 12px;
 }
 @media (min-width: 768px) { 
     #testimonials, #onboarding,
