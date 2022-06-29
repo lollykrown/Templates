@@ -17,13 +17,12 @@ body {
     color: var(--text);
     background-color: transparent;
 }
-header, #stats,
-#top, #symptoms {
+header, #top, #testimonials {
     background-color: var(--background);
 }
-#transmission, #stats,
-#prevention, #top, #symptoms {
-    margin-bottom:100px !important;
+#testimonials, #onboarding,
+#services, #top {
+    margin-bottom:20px !important;
 }
 section{
     width:100%;
@@ -261,7 +260,7 @@ h6, details>summary, details>p{
     display: inline-block;
 }
 .home{
-    margin-top:100px;
+    margin-top:30px;
 }
 details > summary::-webkit-details-marker {
     list-style-type: circle;
@@ -360,3 +359,12 @@ input:focus{
     width: 30px;
     border-radius: 3px;
 }
+@media (min-width: 768px) { 
+    #testimonials, #onboarding,
+    #services, #top {
+        margin-bottom:100px !important;
+    }
+    .home{
+        margin-top:50px;
+    }
+ }
