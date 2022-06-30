@@ -48,7 +48,8 @@
                 <div class="modal-body mx-3">
                     <div class="mb-3">
                         <label for="name" class="col-form-label">Name:</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
+                        <input type="text" class="form-control" id="name" name="name" required 
+                        pattern="^(?:\S.{1,18}\S)?$">
                     </div>
                     <div class="mb-3">
                         <label for="email" class="col-form-label">Email Address:</label>
@@ -61,7 +62,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="message-text" class="col-form-label">Message:</label>
-                        <textarea class="form-control" name="message" id="message-text"></textarea>
+                        <textarea class="form-control" name="message" id="message-text" minlength="5"></textarea>
                     </div>
                 </div>
                 <div class="modal-footer mx-3">
