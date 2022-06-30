@@ -108,16 +108,16 @@
           <form id="contact" autocomplete="off" name="contact" method="POST" data-netlify="true">
             <div class="wr">
               <div class="field name half">
-                <input type="text" name="fullname" id="fullname" placeholder="Kayode Agboola">
+                <input type="text" name="fullname" id="fullname" placeholder="Kayode Agboola" required minlength="3">
                 <label for="fullname">Name</label>
               </div>
               <div class="field half">
-                <input type="text" name="fullname" id="email" placeholder="example@example.com">
+                <input type="text" name="fullname" id="email" placeholder="example@example.com" required>
                 <label for="email">Email</label>
               </div>
             </div>
             <div class="field message">
-              <textarea class="input__field " placeholder="Message" id="msg" name="msg"></textarea>
+              <textarea class="input__field " placeholder="Message" id="msg" name="msg" required minlength="8"></textarea>
               <label for="msg">Message</label>
             </div>
 
