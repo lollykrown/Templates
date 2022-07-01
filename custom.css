@@ -106,12 +106,10 @@ body{
   top: 0;
   left: 0;
 }
-
 .swap-on-hover {
   position: relative;	
 	margin:  0 auto;
 }
-
 /* Select the image and make it absolute to the container */
 .swap-on-hover img {
   position: absolute;
@@ -121,7 +119,6 @@ body{
 	width: 48px;
 	height: 48px;
 }
-
 .swap-on-hover .swap-on-hover__front-image {
   z-index: 8888;
   transition: opacity .5s linear;
@@ -130,7 +127,6 @@ body{
 .brand-img:hover > .swap-on-hover__front-image{
   opacity: 0;
 }
-
 .menu-btn {
   position: absolute;
   z-index: 11;
