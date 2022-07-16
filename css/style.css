@@ -38,6 +38,8 @@ header{
 .logo {
     /* box-shadow: 1px 1px 2px #bbbbbb; */
     pointer-events: none;
+    width: 80px;
+    height: 40px;
 }
 
 .navbar-brand {
@@ -143,12 +145,6 @@ header .nav-link:hover {
     margin: 30px auto;;
 }
 
-@media only screen and (min-width: 768px) { 
-    .det{
-        max-width:50%;
-    }
-
-}
 .line3 {
     border-top: 4px solid var(--primary);
     width: 120px;
@@ -366,11 +362,18 @@ input:focus{
     font-size: 12px;
 }
 @media (min-width: 768px) { 
+    .logo {
+        width: 150px;
+        height: 65px;
+    }
     #testimonials, #onboarding,
     #services, #top {
         margin-bottom:100px !important;
     }
     .home{
         margin-top:50px;
+    }
+    .det{
+        max-width:50%;
     }
  }
